@@ -151,8 +151,8 @@ uv run pre-commit install
 Open Antigravity in this directory and ask the agent to create an implementation plan. Write your own prompt based on the mission above -- be specific about what you want. Here is a minimal example:
 
 ```
-Create a plan for building a Wine classification pipeline with EDA, feature
-engineering, XGBoost with cross-validation, and an evaluation report. Use
+Create a plan for building a Wine classification pipeline with EDA (summary statistics, distributions plots, correlation heatmap, class balance check, outlier detection), feature engineering (at least 3 derived features + standard scaling + stratified train/test split),
+XGBoost with 5-fold cross-validation (and metrics: Accuracy + Precision + Recall + F1 + Confusion Matrix), and an evaluation report (metrics, feature importances, recommendations). Use
 load_wine from sklearn. Put scripts in part2_antigravity/src/ and output
 in output/. Write the plan to plan.md.
 ```
